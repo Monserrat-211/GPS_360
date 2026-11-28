@@ -1,6 +1,7 @@
 package mx.edu.uth.gps_360;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +21,9 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        hola();
+    }
+    public void hola(){
+        Toast.makeText(this, "hola mundo", Toast.LENGTH_SHORT).show();
     }
 }
